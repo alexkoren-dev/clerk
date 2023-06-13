@@ -1,0 +1,52 @@
+/*-----------------------------------*\
+	HTML/BODY
+\*-----------------------------------*/
+
+body {
+	height: 100%;
+	max-height: 100%;
+	font-family: "Graphik Web", Helvetica, Geneva, sans-serif;
+	color: var(--Black);
+	-moz-font-feature-settings: "liga" 0, "kern";
+	-ms-font-feature-settings: "liga" 0, "kern";
+	-o-font-feature-settings: "liga" 0, "kern";
+	-webkit-font-feature-settings: "liga" 0, "kern";
+	font-feature-settings: "liga" 0, "kern";
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	color: var(--Black);
+	font-family: "Graphik Web", Helvetica, Geneva, sans-serif;
+	letter-spacing: 0;
+	text-rendering: optimizeLegibility;
+}
+
+pre {
+	overflow: auto;
+}
+  
+pre > code {
+	word-break: break-word !important;
+	white-space: pre-wrap !important;       /* css-3 */
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap !important;      /* Opera 4-6 */
+	white-space: -o-pre-wrap !important;    /* Opera 7 */
+	word-wrap: break-word !important;
+}
+
+blockquote p {
+    margin-bottom: 0 !important;
+}
+
+.contentWrapper {
+	h1 {
+		font-weight: 700;
+	}
+
+	dd p {
+    	margin-top: 0 !important;
+	}
+}

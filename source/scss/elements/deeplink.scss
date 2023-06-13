@@ -1,0 +1,32 @@
+/* Deep link icon */
+
+h1 .anchor,
+h2 .anchor,
+h3 .anchor,
+h4 .anchor,
+h5 .anchor,
+h6 .anchor {
+    display: inline-block;
+    margin-left: 5px;
+    opacity: 0;
+}
+
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+    opacity: 0.6;
+}
+
+.icon-link {
+    background: url("../images/icon-link.svg") no-repeat;
+    background-size: 0.8em 0.8em;
+    display: inline-block;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+/* End of Deep link icon */

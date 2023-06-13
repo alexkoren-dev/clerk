@@ -1,0 +1,21 @@
+/* Handbook Alert */
+
+#docsSearch+#contentArea .handbook-alert {
+    margin: 0 0 4em;
+
+    @media (min-width: $tablet) {
+        & {
+            /* Homepage Specific */
+            margin: 0 10px 5em;
+        }
+    }
+}
+
+.handbook-alert {
+    border: 1px solid var(--GreyLight);
+    font-size: 15px;
+    padding: 4rem 4rem;
+    text-align: left;
+}
+
+/* End of handbook alert*/

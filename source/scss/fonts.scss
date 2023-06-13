@@ -1,0 +1,99 @@
+/*-----------------------------------*\
+	Custom Fonts
+\*-----------------------------------*/
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/Graphik-Light-Web.eot");
+    src: url("../fonts/Graphik-Light-Web.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Graphik-Light-Web.woff") format("woff"),
+        url("../fonts/Graphik-Light-Web.ttf") format("truetype"),
+        url("../fonts/Graphik-Light-Web.svg#Graphik-Light") format("svg");
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/Graphik-Regular-Web.eot");
+    src: url("../fonts/Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Graphik-Regular-Web.woff") format("woff"),
+        url("../fonts/Graphik-Regular-Web.ttf") format("truetype"),
+        url("../fonts/Graphik-Regular-Web.svg#Graphik-Regular") format("svg");
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("../fonts/Graphik-RegularItalic-Web.eot");
+    src: url("../fonts/Graphik-RegularItalic-Web.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Graphik-RegularItalic-Web.woff") format("woff"),
+        url("../fonts/Graphik-RegularItalic-Web.ttf") format("truetype"),
+        url("../fonts/Graphik-RegularItalic-Web.svg#Graphik-RegularItalic") format("svg");
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/Graphik-Medium-Web.eot");
+    src: url("../fonts/Graphik-Medium-Web.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Graphik-Medium-Web.woff") format("woff"),
+        url("../fonts/Graphik-Medium-Web.ttf") format("truetype"),
+        url("../fonts/Graphik-Medium-Web.svg#Graphik-Medium") format("svg");
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/Graphik-Bold-Web.eot");
+    src: url("../fonts/Graphik-Bold-Web.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Graphik-Bold-Web.woff") format("woff"),
+        url("../fonts/Graphik-Bold-Web.ttf") format("truetype"),
+        url("../fonts/Graphik-Bold-Web.svg#Graphik-Bold") format("svg");
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/RobotoMono-Light.eot");
+    src: url("../fonts/RobotoMono-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/RobotoMono-Light.woff") format("woff"),
+        url("../fonts/RobotoMono-Light.ttf") format("truetype"),
+        url("../fonts/RobotoMono-Light.svg#RobotoMono-Light") format("svg");
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/RobotoMono-Regular.eot");
+    src: url("../fonts/RobotoMono-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/RobotoMono-Regular.woff") format("woff"),
+        url("../fonts/RobotoMono-Regular.ttf") format("truetype"),
+        url("../fonts/RobotoMono-Regular.svg#RobotoMono-Regular") format("svg");
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("../fonts/RobotoMono-Medium.eot");
+    src: url("../fonts/RobotoMono-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/RobotoMono-Medium.woff") format("woff"),
+        url("../fonts/RobotoMono-Medium.ttf") format("truetype"),
+        url("../fonts/RobotoMono-Medium.svg#RobotoMono-Medium") format("svg");
+}

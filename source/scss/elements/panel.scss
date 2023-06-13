@@ -1,0 +1,41 @@
+.panel {
+    margin-bottom: 27px;
+    border: 1px solid var(--GreyLight);
+    padding: 27px 30px;
+
+    @media (min-width: $laptop) {
+        & {
+            padding: 48px 52px;
+            margin-bottom: 0;
+        }
+    }
+    
+}
+
+.panel-body {
+    .row {
+        margin: 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (min-width: $laptop) {
+            & {
+                flex-wrap: nowrap;
+            }
+        }
+    }
+
+    .col-md-6 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+
+        @media (min-width: $laptop) {
+            & {
+                width: 50%;
+            }
+        }
+    }
+}

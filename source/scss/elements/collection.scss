@@ -1,0 +1,92 @@
+/* Collection icons */
+/* The top ids are for staging and the bottom ids for production */
+
+.collection-category {
+    #collection-903::before,
+    #collection-518::before {
+        background: url("../images/collections/formation.svg") no-repeat;
+        background-size: 54px;
+        /* Using px because this is exactly the size the icons were designed for */
+        content: "";
+        display: block;
+        margin: 0 auto;
+        height: 54px;
+        width: 54px;
+        vertical-align: text-bottom;
+    }
+    
+    #collection-894::before,
+    #collection-522::before {
+        background: url("../images/collections/fundraising.svg") no-repeat;
+        background-size: 54px 54px;
+        /* Using px because this is exactly the size the icons were designed for */
+        content: "";
+        display: block;
+        margin: 0 auto 13.5px;
+        height: 54px;
+        width: 54px;
+        vertical-align: text-bottom;
+    }
+    
+    #collection-891::before,
+    #collection-1721::before {
+        background: url("../images/collections/maintenance.svg") no-repeat;
+        background-size: 54px;
+        /* Using px because this is exactly the size the icons were designed for */
+        content: "";
+        display: block;
+        margin: 0 auto;
+        height: 54px;
+        width: 54px;
+        vertical-align: text-bottom;
+    }
+    
+    #collection-898::before,
+    #collection-1::before {
+        background: url("../images/collections/general.svg") no-repeat;
+        background-size: 54px 54px;
+        /* Using px because this is exactly the size the icons were designed for */
+        content: "";
+        display: block;
+        margin: 0 auto 6.75px;
+        height: 54px;
+        width: 54px;
+        vertical-align: text-top;
+    }
+    
+    #collection-1032::before,
+    #collection-2806::before {
+        background: url("../images/collections/hiring.svg") no-repeat;
+        background-size: 54px 54px;
+        /* Using px because this is exactly the size the icons were designed for */
+        content: "";
+        display: block;
+        margin: 0 auto 6.75px;
+        height: 54px;
+        width: 54px;
+        vertical-align: text-top;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        text-align: center;
+
+        a:hover {
+            border-bottom: 0;
+        }
+    }
+}
+
+
+.category-list {
+    margin: 0 -11px 4em;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        & .category {
+          margin: 12px 0 -1px;
+        }
+    }
+}
+
+/* End of collection icons */

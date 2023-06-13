@@ -1,0 +1,86 @@
+#searchBar {
+    button {
+        text-shadow: none;
+        background: var(--Blue);
+        border: 1px solid var(--Blue);
+
+        &:hover {
+            background: var(--BlueDark);
+        }
+    }
+}
+
+.articleFoot {
+    p,
+    time {
+        font-family: "Graphik Web", Helvetica, Geneva, sans-serif;
+        font-style: normal;
+    }
+}
+
+#fullArticle {
+    ol,
+    div,
+    blockquote,
+    dd,
+    table {
+        font-size: 15px !important;
+        letter-spacing: 0.025em;
+        line-height: 1.8;
+        margin-bottom: 27px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .title {
+        margin-bottom: 27px !important;
+        margin-top: 0 !important;
+    }
+
+    img {
+        margin: 27px 0;
+    }
+
+    strong {
+        color: var(--Black);
+    }
+
+    li {
+        font-size: 15px !important;
+        letter-spacing: 0.025em;
+        line-height: 1.8;
+        margin-bottom: 0 !important;
+    }
+
+    .callout-yellow>:last-child,
+    .callout-blue>:last-child,
+    .callout-red>:last-child,
+    .callout-green>:last-child,
+    .callout>:last-child,
+    .private-note>:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    dt {
+        background: var(--Blue);
+        border-radius: 50% !important;
+        font-size: 15px;
+        height: 27px;
+        padding: 0 !important;
+        width: 27px;
+        line-height: 1.8rem !important;
+        margin-top: 2px;
+        text-align: center !important;
+        vertical-align: middle !important;
+    }
+}
+
+#docsSearch {
+    background: var(--White);
+    border-bottom: 1px solid var(--GreyLight);
+    margin-bottom: 4rem;
+    padding: 4rem 0;
+}

@@ -1,0 +1,144 @@
+input, button, select, textarea {
+    font-family: "Graphik Web", Helvetica, Geneva, sans-serif;
+}
+
+/* Button */
+
+.btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0.75em 2em 0.6em;
+    font-size: 15px;
+    color: var(--White);
+    text-shadow: none;
+    background-color: var(--Blue);
+    background-image: none;
+    border: 1px solid var(--Blue);
+    border-bottom-color: var(--Blue);
+
+    &:hover,
+    &.active,
+    &:active,
+    &:focus {
+        color: var(--White);
+        background-color: var(--Blue);
+    }
+}
+
+/* End Button */
+
+/* Inputs */
+
+select,
+textarea,
+input[type=text],
+input[type=password],
+input[type=datetime],
+input[type=datetime-local],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=tel],
+input[type=color],
+.uneditable-input {
+    color: var(--Black);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea:focus,
+input:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=color]:focus,
+.uneditable-input:focus {
+    color: var(--Blue);
+    border-color: var(--Blue);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* End Inputs */
+
+.modal-body {
+    padding: 2em;
+}
+
+.modal #closeBtn {
+    top: 2.4em;
+    right: 2.4em;
+}
+
+
+/* Form control styles */
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+
+    &.input-group-sm>.form-control {
+        padding: 6px 15px;
+        font-size: 15px;
+        line-height: 1.3;
+        height: 43px;
+    }
+}
+
+.subscribe-form .form-control {
+    border: 1px solid var(--GreyLight);
+    color: var(--Black);
+    font-weight: 400;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* End Form control */
+
+/* Input group btn styles */
+
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.input-group-sm>.input-group-btn>.btn {
+    height: 43px;
+    padding: 6px 15px;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+/* End Input group btn */

@@ -1,0 +1,39 @@
+/* Contact Us */
+
+#contactModal h2,
+.abuse h2 {
+    font-size: 19px;
+    padding: 1em;
+    color: var(--Black);
+    border-bottom: 1px solid var(--GreyLight);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#contactForm .control-group,
+#contactModal .control-group,
+.abuse .control-group {
+    margin-bottom: 2em;
+}
+
+.appMessage {
+    em {
+        padding: 1em;
+        border-radius: 0;
+    }
+
+    &.success {
+        color: var(--Green);
+
+        em {
+            background: var(--Green);
+        }
+    }
+}
+
+#contentArea>.appMessage {
+    top: -136px;
+    /*It's strange but this is how they are centering it.*/
+}
+
+/* End of Contact Us */

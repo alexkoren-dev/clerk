@@ -1,0 +1,103 @@
+/* Nav */
+
+.navbar {
+    border-bottom: 1px solid var(--GreyLight);
+
+    .nav li a {
+        color: #6f7680;
+
+        &:active {
+            color: #008fd5;
+        }
+
+        &:hover,
+        &:focus {
+            color: #22262e;
+        }
+    }
+}
+
+.navbar-inner {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#mainNav {
+    .brand {
+        line-height: 0;
+        padding: var(--Large) 0;
+
+        span {
+            display: inline-block;
+            text-indent: -9000px;
+            height: 16px;
+            width: 185px;
+            background: url("../images/logo-help-center.svg") no-repeat 0 0;
+            background-size: 100%;
+        }  
+    } 
+    .caret {
+        display: none;
+    }
+
+    .nav {
+        /* match height of logo section*/
+        height: 81px;
+
+        li a {
+            font-size: 13px;
+            line-height: 81px;
+            padding-top: 0;
+            padding-bottom: 0;
+            -webkit-font-smoothing: auto;
+        }
+
+        #contact,
+        #contactMobile {
+            display: none;
+        }
+
+        .btn-navbar {
+            margin-top: 27px;
+            right: 0;
+        }
+
+        .btn-navbar .icon-bar {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            background: #363636;
+            box-shadow: none;
+        }
+
+        .link-marketing .icon-new-window {
+            background: url("../images/new-window.svg") no-repeat;
+            background-size: 0.8em 0.8em;
+            margin-right: 5px;
+            display: inline-block;
+            height: 1em;
+            vertical-align: middle;
+            width: 1em;
+            opacity: 0.6;
+        }
+
+        .link-marketing:hover .icon-new-window {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        .nav {
+            height: inherit;
+
+            li a {
+                line-height: 4em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* End of Nav */

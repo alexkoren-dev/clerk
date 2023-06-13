@@ -1,0 +1,69 @@
+/* Section sign-up styles */
+
+.section-signup {
+    font-size: 15px;
+    line-height: 1.8;
+
+    .container {
+        width: 100%;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .panel-body h4 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    @media (max-width: $laptop) {
+        & .panel-body .col-md-6+.col-md-6 {
+            margin-top: 40.5px;
+        }
+    }
+}
+
+/* End of Section sign-up */
+
+/* Images in sign-up section styles */
+
+.image {
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.image:before {
+    background-size: 58px 54px;
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    vertical-align: text-bottom;
+}
+
+.image.image-educate:before {
+    background: url(../images/collections/img02.svg) no-repeat;
+}
+
+.image.image-loop:before {
+    background: url(../images/collections/img03.svg) no-repeat;
+    width: 58px;
+    height: 58px;
+}
+
+/* End of images in sign-up section  */
+
+/* Signup form styles */
+
+.subscribe-form {
+    width: 100%;
+    margin-bottom: 0;
+
+    @media (min-width: $laptop) {
+        & {
+            max-width: 375px;
+        }
+    }
+}

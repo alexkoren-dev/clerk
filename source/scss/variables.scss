@@ -1,0 +1,30 @@
+/*-----------------------------------*\
+	VARIABLES
+\*-----------------------------------*/
+$phoneold: 400px;
+$phone: 500px;
+$tablet: 769px;
+$laptop: 992px;
+$desktop: 1200px;
+/*-----------------------------------*\
+	xSmall: 4px
+	Small: 8px
+	Medium: 16px
+	Large: 32px
+	xLarge: 64px
+\*-----------------------------------*/
+:root {
+	--xSmall: .25rem;
+	--Small: .5rem;
+	--Medium: 1rem;
+	--Large: 2rem;
+	--xLarge: 4rem;
+	--Black: hsl(220, 15%, 16%);
+	--Blue: hsl(200, 100%, 42%);
+	--BlueDark: hsl(200, 100%, 32%);
+	--Green: hsl(122, 39%, 49%);
+	--GreyLight: hsl(210, 5%, 92%);
+	--Grey: hsl(215, 7%, 47%);
+	--GreyDark: hsl(0, 0%, 21%);
+	--White: hsl(0, 0%, 100%);
+}
