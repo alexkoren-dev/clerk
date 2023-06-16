@@ -15,10 +15,10 @@ input, button, select, textarea {
     background-color: transparent;
     background: none;
     border-radius: 100px;
-    display: flex !important;
+    display: flex;
     align-items: center;
     width: fit-content;
-    padding: 0 24px;
+    padding: var(--Small) var(--SemiMedium);
     min-height: 40px;
     box-sizing: border-box;
     border: 1px solid var(--GreyLight);
@@ -93,6 +93,8 @@ input[type=color]:focus,
 
 /* End Inputs */
 
+/* Modal */
+
 .modal-body {
     padding: 2em;
 }
@@ -102,8 +104,9 @@ input[type=color]:focus,
     right: 2.4em;
 }
 
+/* End Modal */
 
-/* Form control styles */
+/* Input Group styles */
 
 .input-group {
     position: relative;
@@ -129,10 +132,6 @@ input[type=color]:focus,
     box-sizing: border-box;
 }
 
-/* End Form control */
-
-/* Input group btn styles */
-
 .input-group-btn {
     position: relative;
     font-size: 0;
@@ -149,4 +148,4 @@ input[type=color]:focus,
     line-height: 1.3;
 }
 
-/* End Input group btn */
+/* End Input group */
