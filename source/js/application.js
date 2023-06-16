@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $('header .brand').after(
     `<div class="helpcenter-switch">
         <a class="btn">
-          for Attorneys
+          For Startups
           <span class="icon-new-window">
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m14.75 5.083-5.833 5.834-5.833-5.834" stroke="#989EA6"/>
@@ -30,17 +30,18 @@ document.addEventListener("DOMContentLoaded", function() {
           <li>
             <a href="">
               <span>For Attorneys</span>
-              <span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m3.337 11.688 6.095 5.932L20.575 6.3" stroke="#008FD5"/>
-                </svg>          
+              <span class="icon">
               </span>
             </a>
           </li>
           <li>
             <a href="">
               <span>For Startups</span>
-              <span class="icon"></span>
+              <span class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m3.337 11.688 6.095 5.932L20.575 6.3" stroke="#008FD5"/>
+                </svg>      
+              </span>
             </a>
           </li>
         </ul>
