@@ -1,7 +1,7 @@
 .panel {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     border: 1px solid var(--GreyLight);
-    padding: 27px 30px;
+    padding: 28px 32px;
 
     @media (min-width: $laptop) {
         & {
@@ -14,7 +14,7 @@
 
 .panel-body {
     .row {
-        margin: 0 -15px;
+        margin: 0 -16px;
         display: flex;
         flex-wrap: wrap;
 
@@ -28,8 +28,8 @@
     .col-md-6 {
         position: relative;
         min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 16px;
+        padding-right: 16px;
         width: 100%;
 
         @media (min-width: $laptop) {

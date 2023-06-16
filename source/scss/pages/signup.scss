@@ -1,7 +1,7 @@
 /* Section sign-up styles */
 
 .section-signup {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
 
     .container {
@@ -14,12 +14,12 @@
 
     .panel-body h4 {
         font-weight: 600;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
     }
 
     @media (max-width: $laptop) {
         & .panel-body .col-md-6+.col-md-6 {
-            margin-top: 40.5px;
+            margin-top: 40px;
         }
     }
 }

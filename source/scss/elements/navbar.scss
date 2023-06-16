@@ -2,6 +2,8 @@
 
 .navbar {
     border-bottom: 1px solid var(--GreyLight);
+    max-height: 100%;
+    min-height: var(--xLarge);
 
     .nav li a {
         color: #6f7680;
@@ -15,44 +17,144 @@
             color: #22262e;
         }
     }
+
+    .btn-navbar {
+        margin-top: 12px;
+        right: 0;
+    }
 }
 
 .navbar-inner {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 0;
+    z-index: 9;
+    position: relative;
+
+    .container-fluid {
+        max-width: 1440px;
+    }
 }
 
 #mainNav {
     .brand {
         line-height: 0;
-        padding: var(--Large) 0;
+        padding: 24px 20px;
 
         span {
             display: inline-block;
             text-indent: -9000px;
             height: 16px;
-            width: 185px;
+            width: 184px;
             background: url("../images/logo-help-center.svg") no-repeat 0 0;
             background-size: 100%;
         }  
     } 
+
+    .helpcenter-switch {
+        padding-top: 7px;
+        width: fit-content;
+        display: flex;
+        position: relative;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+
+        & > a {
+            text-transform: uppercase;
+            color: var(--Black);
+            font-weight: bold;
+            border: 1px solid var(--GreyLight);
+            background-color: #f9f9f9;
+
+            & > span {
+                margin-left: 8px;
+            }
+
+            &.active > span > svg {
+                transform: rotateZ(180deg);
+            }
+        }
+
+        .helpcenter-switch-menu {
+            display: none;
+            position: absolute;
+            padding: 8px;
+            border: solid 1px var(--GreyLight);
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 6px 10px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            width: 300px;
+            list-style: none;
+            background-color: white;
+            box-sizing: border-box;
+            top: 60px;
+            margin: 0;
+
+            li a {
+                padding: 12px;
+                font-size: 16px;
+                font-weight: bold;
+                color: var(--Grey);
+                line-height: 1.5;
+                display: block;
+                background: none;
+                border: none;
+                text-decoration: none;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-transform: none;
+
+                span {
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &:hover {
+                    background-color: var(--BlueLight);
+                    color: var(--Blue);
+                }
+            }
+        }
+
+        &.active {
+            .helpcenter-switch-menu {
+                display: block;
+            }
+        }
+    }
+
     .caret {
         display: none;
     }
-
+    
     .nav {
         /* match height of logo section*/
-        height: 81px;
+        height: var(--xLarge);
 
         li a {
-            font-size: 13px;
-            line-height: 81px;
-            padding-top: 0;
-            padding-bottom: 0;
+            font-size: 0.75rem;
+            line-height: var(--xLarge);
+            padding: 0 var(--Small);
             -webkit-font-smoothing: auto;
+
+            &.mobile-swtich-center {
+                display: none;
+                border-radius: 100px;
+                height: 40px;
+                margin: 0 auto;
+
+                @media (max-width: $tablet) {
+                    display: flex;
+                    padding: 0 24px;
+                }
+            }
         }
 
         #contact,
@@ -61,7 +163,7 @@
         }
 
         .btn-navbar {
-            margin-top: 27px;
+            margin-top: 28px;
             right: 0;
         }
 
@@ -72,19 +174,41 @@
             box-shadow: none;
         }
 
-        .link-marketing .icon-new-window {
-            background: url("../images/new-window.svg") no-repeat;
-            background-size: 0.8em 0.8em;
-            margin-right: 5px;
-            display: inline-block;
-            height: 1em;
-            vertical-align: middle;
-            width: 1em;
-            opacity: 0.6;
-        }
+        .link-marketing {
+            margin-left: var(--Small);
+            width: 160px;
+            min-height: 30px;
+            position: relative;
 
-        .link-marketing:hover .icon-new-window {
-            opacity: 1;
+            a {
+                position: absolute;
+                left: 0;
+                top: 7px;
+                width: 160px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 2.5rem;
+                border: 1px solid var(--GreyLight);
+                border-radius: 100px;
+                padding: 0 24px;
+                font-weight: bold;
+                margin: 0 auto;
+                box-sizing: border-box;
+
+                .icon-new-window {
+                    margin-right: 8px;
+                    height: 1em;
+                    width: 1em;
+                    opacity: 1;
+
+                    svg {
+                        height: 1em;
+                        width: 1em;
+                        margin-top: 1px;
+                    }
+                }
+            }
         }
     }
 
@@ -96,6 +220,13 @@
                 line-height: 4em;
                 text-align: center;
             }
+        }
+
+        .link-marketing {
+            height: 40px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-bottom: 30px;
         }
     }
 }

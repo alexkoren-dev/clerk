@@ -2,74 +2,16 @@
 /* The top ids are for staging and the bottom ids for production */
 
 .collection-category {
-    #collection-903::before,
-    #collection-518::before {
-        background: url("../images/collections/formation.svg") no-repeat;
-        background-size: 54px;
-        /* Using px because this is exactly the size the icons were designed for */
-        content: "";
-        display: block;
-        margin: 0 auto;
-        height: 54px;
-        width: 54px;
-        vertical-align: text-bottom;
-    }
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: solid 1px var(--GreyLight);
+    padding-top: 40px;
     
-    #collection-894::before,
-    #collection-522::before {
-        background: url("../images/collections/fundraising.svg") no-repeat;
-        background-size: 54px 54px;
-        /* Using px because this is exactly the size the icons were designed for */
-        content: "";
-        display: block;
-        margin: 0 auto 13.5px;
-        height: 54px;
-        width: 54px;
-        vertical-align: text-bottom;
-    }
-    
-    #collection-891::before,
-    #collection-1721::before {
-        background: url("../images/collections/maintenance.svg") no-repeat;
-        background-size: 54px;
-        /* Using px because this is exactly the size the icons were designed for */
-        content: "";
-        display: block;
-        margin: 0 auto;
-        height: 54px;
-        width: 54px;
-        vertical-align: text-bottom;
-    }
-    
-    #collection-898::before,
-    #collection-1::before {
-        background: url("../images/collections/general.svg") no-repeat;
-        background-size: 54px 54px;
-        /* Using px because this is exactly the size the icons were designed for */
-        content: "";
-        display: block;
-        margin: 0 auto 6.75px;
-        height: 54px;
-        width: 54px;
-        vertical-align: text-top;
-    }
-    
-    #collection-1032::before,
-    #collection-2806::before {
-        background: url("../images/collections/hiring.svg") no-repeat;
-        background-size: 54px 54px;
-        /* Using px because this is exactly the size the icons were designed for */
-        content: "";
-        display: block;
-        margin: 0 auto 6.75px;
-        height: 54px;
-        width: 54px;
-        vertical-align: text-top;
-    }
-
     h2 {
-        margin-bottom: 2rem;
+        margin-bottom: 30px;
         text-align: center;
+        font-size: var(--SemiMedium);
+        font-weight: bold;
 
         a:hover {
             border-bottom: 0;
@@ -79,10 +21,44 @@
 
 
 .category-list {
-    margin: 0 -11px 4em;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    margin: 0 0 40px 0 !important;
 
-    @media (max-width: 768px) {
+    .category {
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 284px;
+        margin: 0;
+        padding: 40px 24px;
+
+        h3 {
+            font-size: var(--Medium);
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        .article-count {
+            margin: 0;
+            color: var(--Grey) !important;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        &:hover {
+            background-color: var(--BlueLight);
+            border: 1px solid var(--Blue);
+        }
+    }
+
+    @media (max-width: $tablet) {
         & .category {
           margin: 12px 0 -1px;
         }

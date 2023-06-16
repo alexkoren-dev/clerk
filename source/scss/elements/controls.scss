@@ -10,22 +10,30 @@ input, button, select, textarea {
     border-radius: 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
-    box-shadow: none;
-    padding: 0.75em 2em 0.6em;
-    font-size: 15px;
-    color: var(--White);
+    box-shadow: none !important;
     text-shadow: none;
-    background-color: var(--Blue);
-    background-image: none;
-    border: 1px solid var(--Blue);
-    border-bottom-color: var(--Blue);
+    background-color: transparent;
+    background: none;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0 24px;
+    min-height: 40px;
+    box-sizing: border-box;
+    border: 1px solid var(--GreyLight);
 
     &:hover,
     &.active,
     &:active,
     &:focus {
-        color: var(--White);
-        background-color: var(--Blue);
+        color: var(--Blue) !important;
+        border: 1px solid var(--Blue) !important;
+        background-color: var(--BlueLight);
+
+        svg path {
+            stroke: var(--Blue);
+        }
     }
 }
 
@@ -76,7 +84,7 @@ input[type=search]:focus,
 input[type=tel]:focus,
 input[type=color]:focus,
 .uneditable-input:focus {
-    color: var(--Blue);
+    color: var(--Black);
     border-color: var(--Blue);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;

@@ -1,10 +1,94 @@
 document.addEventListener("DOMContentLoaded", function() {
   $('#mainNav .nav').append(
-    '<li><a class="link-marketing" href="https://www.clerky.com" target="_blank" title="Go to www.clerky.com"><span class="icon-new-window"></span>Go to Clerky</a></li>'
+    `<li class="link-marketing">
+      <a href="https://www.clerky.com" target="_blank" class="btn" title="Go to www.clerky.com">
+        <span class="icon-new-window">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.083 11.417v5.666H2.917V2.917h5.666M17.083 9.528V2.917h-6.61M17.083 2.917l-7.555 7.555" stroke="#6F7680"/>
+          </svg>    
+        </span>
+        Go to Clerky
+      </a>
+    </li>`
   );
 
-  addSubscribeSection();
+  $('#docsSearch').prepend(
+    '<div class="help-center-subtitle">Help center for startups</div>'
+  );
+
+  $('header .brand').after(
+    `<div class="helpcenter-switch">
+        <a class="btn">
+          for Attorneys
+          <span class="icon-new-window">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="m14.75 5.083-5.833 5.834-5.833-5.834" stroke="#989EA6"/>
+            </svg>         
+          </span>
+        </a>
+        <ul class="helpcenter-switch-menu">
+          <li>
+            <a href="">
+              <span>For Attorneys</span>
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m3.337 11.688 6.095 5.932L20.575 6.3" stroke="#008FD5"/>
+                </svg>          
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span>For Startups</span>
+              <span class="icon"></span>
+            </a>
+          </li>
+        </ul>
+      </div>`
+  );
+
+  $('header .nav-collapse .nav').prepend(
+    `<li>
+      <a href="" class="mobile-swtich-center btn">
+        <span>View Help Center for Attorney</span>
+      </a>
+    </li>`
+  );
+
+  $('#contentArea').prepend(
+    `<div class="are-you-attorney">
+      <label>Are you an attorney?</label>
+      <a href="" class="btn">View Help Center for Attorney 
+        <span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m12.704 5.63 4.37 4.37-4.37 4.37M2.49 10h14.428" stroke="#6F7680"/>
+          </svg>
+        </span>
+      </a>
+    </div>`
+  );
+
+  // addSubscribeSection();
   addFooter();
+
+  $('.helpcenter-switch .btn').click(function(){
+    if($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(this).parent().removeClass('active');
+    } else {
+      $(this).addClass('active');
+      $(this).parent().addClass('active');
+    }
+  });
+
+  $(window).click(function() {
+    $('.helpcenter-switch').removeClass('active');
+    $('.helpcenter-switch .btn').removeClass('active');
+  });
+  
+  $('.helpcenter-switch').click(function(event){
+    event.stopPropagation();
+  });
 });
 
 function addSubscribeSection() {
@@ -44,19 +128,6 @@ function addSubscribeSection() {
 
 function addFooter() {
   var $footer = jQuery('footer');
-  var footerNavHtml = '<div class="col-sm-12"><ul class="list-unstyled list-inline">'
-              + '<li><a href="https://www.clerky.com/site/terms">Terms</a></li>'
-              + '<li><a href="https://www.clerky.com/site/privacy">Privacy</a></li>'
-              + '<li>Copyright © 2023 <a href="https://www.clerky.com">Clerky</a>, Inc.</li>'
-            + '</ul></div>';
-  var html = '<div class="container text-muted small footer-bar">'
-          +'<div class="row"><div class="col-sm-12">'
-            +'<p class="no-margin-bottom">Clerky, Inc. is not an attorney or a law firm, and can only provide self-help services at your specific direction. Clerky, Inc. is a bonded legal document assistant registered in San Mateo County, California (#2022-1, expiring February 27, 2024). Our business address and phone number are 440 N. Barranca Ave. #1881, Covina, CA 91723 and '
-              +'<a href="tel:6504405449">650-440-5449.</a>'
-            +'</p>'
-          +'</div>'+ footerNavHtml +'</div>'
-        +'</div>';
-
   $footer.attr('id', 'footer');
-  $footer.html(html);
+  $footer.html('<p>Copyright © 2023 Clerky, Inc.</p>');
 }
