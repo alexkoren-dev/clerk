@@ -15,7 +15,7 @@ input, button, select, textarea {
     background-color: transparent;
     background: none;
     border-radius: 100px;
-    display: flex;
+    display: flex !important;
     align-items: center;
     width: fit-content;
     padding: 0 24px;

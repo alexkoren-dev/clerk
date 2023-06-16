@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </li>`
   );
 
-  $('#contentArea').prepend(
+  $('.collection-category').first().before(
     `<div class="are-you-attorney">
       <label>Are you an attorney?</label>
       <a href="" class="btn">View Help Center for Attorney 

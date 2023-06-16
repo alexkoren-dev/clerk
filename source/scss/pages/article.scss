@@ -50,6 +50,22 @@
             min-width: 52px;
         }
     }
+
+    &.sm::before {
+        content: none;
+    }
+
+    &.sm .search-query {
+        padding-left: var(--Medium);
+    }
+}
+
+#serp-dd {
+    top: 80px;
+
+    @media (max-width: $tablet) {
+        top: 70px;
+    }
 }
 
 .articleFoot {
