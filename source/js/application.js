@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </a>
         <ul class="helpcenter-switch-menu">
           <li>
-            <a href="">
+            <a href="https://clerky-staging-attorneys.helpscoutdocs.com/">
               <span>For Attorneys</span>
               <span class="icon">
               </span>
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   $('header .nav-collapse .nav').prepend(
     `<li>
-      <a href="" class="mobile-swtich-center btn">
+      <a href="https://clerky-staging-attorneys.helpscoutdocs.com/" class="mobile-swtich-center btn">
         <span>View Help Center for Attorney</span>
       </a>
     </li>`
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $('.collection-category').first().before(
     `<div class="are-you-attorney">
       <label>Are you an attorney?</label>
-      <a href="" class="btn">View Help Center for Attorney 
+      <a href="https://clerky-staging-attorneys.helpscoutdocs.com/" class="btn">View Help Center for Attorney 
         <span>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="m12.704 5.63 4.37 4.37-4.37 4.37M2.49 10h14.428" stroke="#6F7680"/>
