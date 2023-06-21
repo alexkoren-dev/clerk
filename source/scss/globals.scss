@@ -44,6 +44,9 @@ blockquote p {
 }
 
 .contentWrapper {
+    p {
+        margin-top: 0 !important;
+    }
 	h1 {
 		font-weight: 700;
 	}

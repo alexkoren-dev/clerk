@@ -54,6 +54,10 @@
         letter-spacing: 0.025em;
         line-height: var(--xxMedium);
         margin-bottom: 0 !important;
+
+        p {
+            vertical-align: baseline !important;
+        }
     }
 
     .callout-yellow>:last-child,
@@ -71,6 +75,9 @@
         font-size: 16px;
         height: 28px;
         padding: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 28px;
         line-height: var(--xxMedium) !important;
         margin-top: 2px;
