@@ -78,8 +78,13 @@
                 margin-top: 3px;
             }
 
+            &.active {
+                background-color: white;
+            }
+
             &.active > span > svg {
                 transform: rotateZ(180deg);
+                
             }
         }
 
