@@ -6,15 +6,15 @@
     min-height: var(--xLarge);
 
     .nav li a {
-        color: #6f7680;
+        color: var(--Grey);
 
         &:active {
-            color: #008fd5;
+            color: var(--Blue);
         }
 
         &:hover,
         &:focus {
-            color: #22262e;
+            color: var(--Black);
         }
     }
 
@@ -28,8 +28,8 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: var(--xMedium);
+    padding-right: var(--xMedium);
     min-height: 0;
     z-index: 9;
     position: relative;
@@ -42,7 +42,7 @@
 #mainNav {
     .brand {
         line-height: 0;
-        padding: 24px 20px;
+        padding: var(--xxMedium) var(--xMedium);
 
         span {
             display: inline-block;
@@ -70,9 +70,12 @@
             font-weight: bold;
             border: 1px solid var(--GreyLight);
             background-color: #f9f9f9;
+            font-size: 14px;
+            line-height: var(--xMedium);
 
             & > span {
                 margin-left: 8px;
+                margin-top: 3px;
             }
 
             &.active > span > svg {
@@ -99,7 +102,7 @@
                 font-size: 16px;
                 font-weight: bold;
                 color: var(--Grey);
-                line-height: 1.5;
+                line-height: var(--xxMedium);
                 display: block;
                 background: none;
                 border: none;
@@ -139,7 +142,7 @@
         height: var(--xLarge);
 
         li a {
-            font-size: 0.75rem;
+            font-size: 14px;
             line-height: var(--xLarge);
             padding: 0 var(--Small);
             -webkit-font-smoothing: auto;
@@ -190,11 +193,14 @@
                 justify-content: center;
                 height: 2.5rem;
                 border: 1px solid var(--GreyLight);
+                font-size: 14px;
+                line-height: var(--xMedium) !important;
                 border-radius: 100px;
                 padding: 0 24px;
                 font-weight: bold;
                 margin: 0 auto;
                 box-sizing: border-box;
+                padding-bottom: 2px;
 
                 .icon-new-window {
                     margin-right: 8px;

@@ -7,9 +7,10 @@
     padding-top: 40px;
     
     h2 {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         text-align: center;
-        font-size: var(--SemiMedium);
+        font-size: 26px;
+        line-height: 1.54;
         font-weight: bold;
 
         a:hover {
@@ -22,8 +23,8 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: var(--xMedium);
+    column-gap: var(--xMedium);
     justify-content: center;
     margin: 0 0 40px 0 !important;
 
@@ -35,8 +36,13 @@
         margin: 0;
         padding: 40px 24px;
 
+        p {
+            margin: 0;
+        }
+
         h3 {
-            font-size: var(--Medium);
+            font-size: 16px;
+            line-height: var(--xxMedium);
             font-weight: bold;
             margin: 0;
             margin-bottom: 8px;
@@ -46,6 +52,7 @@
             margin: 0;
             color: var(--Grey) !important;
             font-size: 0.75rem;
+            line-height: var(--Medium);
             text-transform: uppercase;
             font-weight: bold;
         }

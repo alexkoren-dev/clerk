@@ -14,6 +14,8 @@ body {
 	font-feature-settings: "liga" 0, "kern";
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
+    font-size: 16px;
+    line-height: var(--xxMedium);
 }
 
 h1, h2, h3,
@@ -65,9 +67,10 @@ blockquote p {
         justify-content: center;
 
         label {
-            font-size: 12px;
+            font-size: 14px;
+            line-height: var(--xMedium);
             color: var(--Black);
-            margin-right: 20px;
+            margin-right: var(--xMedium);
             font-weight: bold;
             margin-bottom: 0;
         }
@@ -78,10 +81,11 @@ blockquote p {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0 24px;
+            padding: 0 var(--xxMedium);
             height: 40px;
             color: var(--Grey);
-            font-size: 12px;
+            font-size: 14px;
+            line-height: var(--xMedium);
             font-weight: bold;
             text-decoration: none;
 
@@ -89,6 +93,7 @@ blockquote p {
                 margin-left: 8px;
                 width: 20px;
                 height: 20px;
+                margin-top: 3px;
             }
         }
 
@@ -97,7 +102,7 @@ blockquote p {
             padding: 4rem 0;
 
             label {
-                margin-bottom: 20px;
+                margin-bottom: var(--xMedium);
                 margin-right: 0;
             }
         }

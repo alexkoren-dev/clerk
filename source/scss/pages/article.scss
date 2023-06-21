@@ -8,15 +8,26 @@
     }
 }
 
+#sidebar h3 {
+    font-size: 16px;
+    line-height: var(--xxMedium);
+}
+
+#sidebar .nav-list a {
+    font-size: 14px;
+    line-height: var(--xMedium);
+}
+
 #fullArticle {
     ol,
     div,
     blockquote,
     dd,
+    p,
     table {
         font-size: 16px !important;
         letter-spacing: 0.025em;
-        line-height: 1.8;
+        line-height: var(--xxMedium);
         margin-bottom: 28px;
     }
 
@@ -41,7 +52,7 @@
     li {
         font-size: 16px !important;
         letter-spacing: 0.025em;
-        line-height: 1.8;
+        line-height: var(--xxMedium);
         margin-bottom: 0 !important;
     }
 
@@ -61,7 +72,7 @@
         height: 28px;
         padding: 0 !important;
         width: 28px;
-        line-height: 1.8rem !important;
+        line-height: var(--xxMedium) !important;
         margin-top: 2px;
         text-align: center !important;
         vertical-align: middle !important;
@@ -69,6 +80,8 @@
 
     .admin-edit {
         display: flex;
+        font-size: 14px;
+        line-height: var(--xMedium);
     }
 }
 

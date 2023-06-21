@@ -9,7 +9,7 @@
     }
 
     p {
-        margin-bottom: 20px;
+        margin-bottom: var(--xMedium);
     }
 
     .panel-body h4 {
@@ -30,7 +30,7 @@
 
 .image {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: var(--xMedium);
     display: block;
 }
 

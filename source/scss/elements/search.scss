@@ -17,6 +17,7 @@
         line-height: 60px;
         font-weight: 700;
         margin-top: 12px;
+        margin-bottom: 0;
 
         @media (max-width: $phone) {
             font-size: 28px;
@@ -25,7 +26,8 @@
     }
 
     .help-center-subtitle {
-        font-size: 0.75rem;
+        font-size: 14px;
+        line-height: var(--xMedium);
         color: var(--Grey);
         text-transform: uppercase;
         text-align: center;
@@ -39,6 +41,11 @@
     @media (max-width: $tablet) {
         top: 70px;
     }
+}
+
+form#searchBar {
+    padding-top: var(--xMedium);
+    padding-bottom: 0;
 }
 
 #searchBar {
@@ -55,7 +62,7 @@
         height: 20px;
         position: absolute;
         left: 24px;
-        top: 40px;
+        top: 36px;
 
         @media (max-width: $tablet) {
             top: 34px;
@@ -66,6 +73,7 @@
         height: 52px;
         border-radius: var(--Large);
         font-size: var(--Medium);
+        line-height: var(--xxMedium);
         padding-left: var(--xLarge);
     }
 
@@ -74,11 +82,12 @@
         border-radius: var(--Large);
         text-shadow: none;
         background: var(--Blue);
-        border: 1px solid var(--Blue);
-        font-size: var(--Medium);
+        border: 1px solid var(--BlueDark);
+        font-size: 16px;
+        line-height: var(--xxMedium);
         padding-left: var(--Large);
         padding-right: var(--Large);
-        margin-left: 20px;
+        margin-left: var(--xMedium);
         position: relative;
         top: 0;
         right: 0;
@@ -100,5 +109,7 @@
 
     &.sm .search-query {
         padding-left: var(--Medium);
+        font-size: 14px;
+        line-height: var(--xMedium);
     }
 }
