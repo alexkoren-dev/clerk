@@ -94,8 +94,7 @@ form#searchBar {
         }
 
         @media (max-width: $phone) {
-            padding-left: 0.9em !important;
-            padding-right: 0.9em !important;
+            padding: 0;
             min-width: 52px;
             width: 52px;
             min-height: 52px;
@@ -117,5 +116,12 @@ form#searchBar {
         padding-left: var(--Medium);
         font-size: 14px;
         line-height: var(--xMedium);
+        max-height: 40px;
+    }
+
+    &.sm button {
+        width: fit-content;
+        min-width: 0;
+        min-height: 0;
     }
 }
