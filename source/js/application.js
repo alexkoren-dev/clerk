@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
   );
 
   $('#docsSearch').prepend(
-    '<div class="help-center-subtitle">Help center for startups</div>'
+    '<div class="help-center-subtitle">Help center for Attorneys</div>'
   );
 
   $('header .brand').after(
     `<div class="helpcenter-switch desktop">
         <a class="btn">
           <span class="text">
-            For Startups
+            For Attorneys
           </span>
           <span class="icon-new-window">
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="https://clerky-staging-attorneys.helpscoutdocs.com/">
               <span>For Attorneys</span>
               <span class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m3.337 11.688 6.095 5.932L20.575 6.3" stroke="#008FD5"/>
+                </svg>    
               </span>
             </a>
           </li>
@@ -38,9 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="">
               <span>For Startups</span>
               <span class="icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m3.337 11.688 6.095 5.932L20.575 6.3" stroke="#008FD5"/>
-                </svg>      
               </span>
             </a>
           </li>
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="helpcenter-switch mobile">
         <a class="btn">
           <span class="text">
-            For Startups
+            For Attorneys
           </span>
           <span class="icon-new-window">
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,6 +66,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="https://clerky-staging-attorneys.helpscoutdocs.com/">
               <span>For Attorneys</span>
               <span class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m3.337 11.688 6.095 5.932L20.575 6.3" stroke="#008FD5"/>
+                </svg>
               </span>
             </a>
           </li>
@@ -73,9 +76,6 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="">
               <span>For Startups</span>
               <span class="icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m3.337 11.688 6.095 5.932L20.575 6.3" stroke="#008FD5"/>
-                </svg>      
               </span>
             </a>
           </li>
@@ -86,9 +86,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   $('.collection-category').first().before(
     `<div class="are-you-attorney">
-      <label>Are you an attorney?</label>
-      <a href="https://clerky-staging-attorneys.helpscoutdocs.com/" class="btn">
-        <span>View Help Center for Attorney</span> 
+      <label>Are you a startup?</label>
+      <a href="https://staging.help.clerky.com/" class="btn">
+        <span>View Help Center for Startups</span> 
         <span class="icon">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="m12.704 5.63 4.37 4.37-4.37 4.37M2.49 10h14.428" stroke="#6F7680"/>
