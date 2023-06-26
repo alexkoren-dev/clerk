@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://staging.help.clerky.com/">
               <span>For Startups</span>
               <span class="icon">
               </span>
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://staging.help.clerky.com/">
               <span>For Startups</span>
               <span class="icon">
               </span>
