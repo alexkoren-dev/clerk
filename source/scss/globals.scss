@@ -58,7 +58,7 @@ blockquote p {
 
 
 #contentArea {
-    max-width: 100%;
+    max-width: 1200px;
 
 	/* Are you attorney section */
     .are-you-attorney {
@@ -79,7 +79,6 @@ blockquote p {
         }
 
         a {
-            border: solid 1px var(--GreyLight);
             border-radius: 100px;
             display: flex;
             align-items: center;
@@ -92,7 +91,7 @@ blockquote p {
             font-weight: bold;
             text-decoration: none;
 
-            span {
+            span.icon {
                 margin-left: 8px;
                 width: 20px;
                 height: 20px;
@@ -110,4 +109,9 @@ blockquote p {
             }
         }
     }
+}
+
+.articleList {
+    font-size: 16px;
+    line-height: var(--xxMedium);
 }

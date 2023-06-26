@@ -1,5 +1,9 @@
 input, button, select, textarea {
     font-family: "Graphik Web", Helvetica, Geneva, sans-serif;
+    padding-top: 0.734375rem !important;
+    padding-bottom: 0.640625rem !important;
+    line-height: 1.75rem !important;
+    height: fit-content !important;
 }
 
 /* Button */
@@ -30,7 +34,7 @@ input, button, select, textarea {
     &:active,
     &:focus {
         color: var(--Blue) !important;
-        border: 1px solid var(--Blue) !important;
+        border: 1px solid var(--Blue);
         background-color: var(--BlueLight);
 
         svg path {

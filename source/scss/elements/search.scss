@@ -44,7 +44,8 @@
 }
 
 form#searchBar {
-    padding-top: var(--xMedium);
+    margin-top: var(--xMedium);
+    padding-top: 0;
     padding-bottom: 0;
 }
 
@@ -62,11 +63,7 @@ form#searchBar {
         height: 20px;
         position: absolute;
         left: 24px;
-        top: 36px;
-
-        @media (max-width: $tablet) {
-            top: 34px;
-        }
+        top: 16px;
     }
 
     .search-query {
@@ -74,7 +71,7 @@ form#searchBar {
         border-radius: var(--Large);
         font-size: var(--Medium);
         line-height: var(--xxMedium);
-        padding-left: var(--xLarge);
+        padding-left: 52px;
     }
 
     button {
@@ -100,6 +97,15 @@ form#searchBar {
             padding-left: 0.9em !important;
             padding-right: 0.9em !important;
             min-width: 52px;
+            width: 52px;
+            min-height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: none;
+            }
         }
     }
 

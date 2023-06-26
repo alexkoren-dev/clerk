@@ -14,13 +14,30 @@
 
         &:hover,
         &:focus {
-            color: var(--Black);
+            color: var(--Blue);
         }
     }
 
     .btn-navbar {
         margin-top: 12px;
         right: 0;
+    }
+
+    .btn-navbar {
+        right: 0;
+        border-color: white !important;
+
+        .icon-bar {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            background: #363636 !important;
+            box-shadow: none !important;
+            height: 0.1rem;
+
+            &+.icon-bar {
+                margin-top: 4px;
+            }
+        }
     }
 }
 
@@ -42,26 +59,50 @@
 #mainNav {
     .brand {
         line-height: 0;
-        padding: var(--xxMedium) var(--xMedium);
+        padding: 22px var(--xMedium) 22px 0;
 
         span {
             display: inline-block;
             text-indent: -9000px;
-            height: 16px;
-            width: 184px;
+            height: 20px;
+            width: 229px;
             background: url("../images/logo-help-center.svg") no-repeat 0 0;
             background-size: 100%;
         }  
     } 
 
     .helpcenter-switch {
-        padding-top: 7px;
         width: fit-content;
+        align-items: center;
         display: flex;
         position: relative;
 
-        @media (max-width: $tablet) {
+        &.mobile {
             display: none;
+            margin: 0 auto;
+            
+            .helpcenter-switch-menu {
+                left: 50%;
+                transform: translate(-50%, 0px);
+            }
+
+            a {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 0 24px;
+                line-height: var(--xMedium) !important;
+                border-radius: 100px;
+            }
+        }
+
+        @media (max-width: $tablet) {
+            &.desktop {
+                display: none;
+            }
+            &.mobile {
+                display: flex;
+            }
         }
 
         & > a {
@@ -72,10 +113,14 @@
             background-color: #f9f9f9;
             font-size: 14px;
             line-height: var(--xMedium);
+            margin-top: 12px;
 
-            & > span {
+            & > span.icon-new-window {
                 margin-left: 8px;
-                margin-top: 3px;
+            }
+
+            & > span.text {
+                margin-bottom: 0.12rem;
             }
 
             &.active {
@@ -170,23 +215,12 @@
             display: none;
         }
 
-        .btn-navbar {
-            margin-top: 28px;
-            right: 0;
-        }
-
-        .btn-navbar .icon-bar {
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            background: #363636;
-            box-shadow: none;
-        }
-
         .link-marketing {
             margin-left: var(--Small);
             width: 160px;
             min-height: 30px;
             position: relative;
+            white-space: nowrap;
 
             a {
                 position: absolute;
@@ -197,7 +231,6 @@
                 align-items: center;
                 justify-content: center;
                 height: 2.5rem;
-                border: 1px solid var(--GreyLight);
                 font-size: 14px;
                 line-height: var(--xMedium) !important;
                 border-radius: 100px;
@@ -207,17 +240,9 @@
                 box-sizing: border-box;
                 padding-bottom: 2px;
 
-                .icon-new-window {
+                svg {
                     margin-right: 8px;
-                    height: 1em;
-                    width: 1em;
-                    opacity: 1;
-
-                    svg {
-                        height: 1em;
-                        width: 1em;
-                        margin-top: 1px;
-                    }
+                    margin-top: 1px;
                 }
             }
         }

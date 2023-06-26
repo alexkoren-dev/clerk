@@ -2,12 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
   $('#mainNav .nav').append(
     `<li class="link-marketing">
       <a href="https://www.clerky.com" target="_blank" class="btn" title="Go to www.clerky.com">
-        <span class="icon-new-window">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.083 11.417v5.666H2.917V2.917h5.666M17.083 9.528V2.917h-6.61M17.083 2.917l-7.555 7.555" stroke="#6F7680"/>
-          </svg>    
-        </span>
-        Go to Clerky
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.083 11.417v5.666H2.917V2.917h5.666M17.083 9.528V2.917h-6.61M17.083 2.917l-7.555 7.555" stroke="#6F7680"/>
+        </svg>
+        <span>Go to Clerky</span>
       </a>
     </li>`
   );
@@ -17,9 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
   );
 
   $('header .brand').after(
-    `<div class="helpcenter-switch">
+    `<div class="helpcenter-switch desktop">
         <a class="btn">
-          For Startups
+          <span class="text">
+            For Startups
+          </span>
           <span class="icon-new-window">
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m14.75 5.083-5.833 5.834-5.833-5.834" stroke="#989EA6"/>
@@ -50,17 +50,46 @@ document.addEventListener("DOMContentLoaded", function() {
 
   $('header .nav-collapse .nav').prepend(
     `<li>
-      <a href="https://clerky-staging-attorneys.helpscoutdocs.com/" class="mobile-swtich-center btn">
-        <span>View Help Center for Attorney</span>
-      </a>
+        <div class="helpcenter-switch mobile">
+        <a class="btn">
+          <span class="text">
+            For Startups
+          </span>
+          <span class="icon-new-window">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="m14.75 5.083-5.833 5.834-5.833-5.834" stroke="#989EA6"/>
+            </svg>         
+          </span>
+        </a>
+        <ul class="helpcenter-switch-menu">
+          <li>
+            <a href="https://clerky-staging-attorneys.helpscoutdocs.com/">
+              <span>For Attorneys</span>
+              <span class="icon">
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span>For Startups</span>
+              <span class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m3.337 11.688 6.095 5.932L20.575 6.3" stroke="#008FD5"/>
+                </svg>      
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </li>`
   );
 
   $('.collection-category').first().before(
     `<div class="are-you-attorney">
       <label>Are you an attorney?</label>
-      <a href="https://clerky-staging-attorneys.helpscoutdocs.com/" class="btn">View Help Center for Attorney 
-        <span>
+      <a href="https://clerky-staging-attorneys.helpscoutdocs.com/" class="btn">
+        <span>View Help Center for Attorney</span> 
+        <span class="icon">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="m12.704 5.63 4.37 4.37-4.37 4.37M2.49 10h14.428" stroke="#6F7680"/>
           </svg>
@@ -129,6 +158,6 @@ function addSubscribeSection() {
 
 function addFooter() {
   var $footer = jQuery('footer');
-  $footer.attr('id', 'footer');
-  $footer.html('<p>Copyright © 2023 Clerky, Inc.</p>');
+  $footer.remove();
+  $('#contentArea').after('<div id="footer"><p>Copyright © 2023 Clerky, Inc.</p></div>');
 }
