@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             For Attorneys
           </span>
           <span class="icon-new-window">
-            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m14.75 5.083-5.833 5.834-5.833-5.834" stroke="#989EA6"/>
             </svg>         
           </span>
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             For Attorneys
           </span>
           <span class="icon-new-window">
-            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m14.75 5.083-5.833 5.834-5.833-5.834" stroke="#989EA6"/>
             </svg>         
           </span>
