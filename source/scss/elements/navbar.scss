@@ -21,7 +21,7 @@
     .btn-navbar {
         right: -14px;
         margin-top: 12px;
-        border-color: white !important;
+        border: none !important;
 
         .icon-bar {
             -webkit-box-shadow: none;
@@ -32,6 +32,10 @@
 
             &+.icon-bar {
                 margin-top: 4px;
+            }
+
+            @media (max-width: $tablet) {
+                height: 2px;
             }
         }
     }
@@ -80,6 +84,7 @@
             .helpcenter-switch-menu {
                 left: 50%;
                 transform: translate(-50%, 0px);
+                z-index: 999;
             }
 
             a {
@@ -115,17 +120,12 @@
                 margin-left: 8px;
             }
 
-            & > span.text {
-                margin-bottom: 0.12rem;
-            }
-
             &.active {
                 background-color: white;
             }
 
             &.active > span > svg {
                 transform: rotateZ(180deg);
-                
             }
         }
 
@@ -142,13 +142,15 @@
             box-sizing: border-box;
             top: 60px;
             margin: 0;
+            z-index: 999;
 
             li a {
                 padding: 12px;
                 font-size: 16px;
                 font-weight: bold;
                 color: var(--Grey);
-                line-height: var(--xxMedium);
+                height: fit-content;
+                line-height: var(--xxMedium) !important;
                 display: block;
                 background: none;
                 border: none;
@@ -226,19 +228,18 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                height: 2.5rem;
                 font-size: 14px;
                 line-height: var(--xMedium) !important;
                 border-radius: 100px;
-                padding: 0 24px;
                 font-weight: bold;
                 margin: 0 auto;
                 box-sizing: border-box;
-                padding-bottom: 2px;
+                padding-top: 0.609375rem;
+                padding-bottom: 0.515625rem;
 
                 svg {
                     margin-right: 8px;
-                    margin-top: 1px;
+                    margin-top: -0.0625rem;
                 }
             }
         }

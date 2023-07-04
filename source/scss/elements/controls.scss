@@ -22,12 +22,19 @@ input, button, select, textarea {
     display: flex;
     align-items: center;
     width: fit-content;
-    padding: var(--Small) var(--xxMedium);
+    padding-left: var(--xxMedium);
+    padding-right: var(--xxMedium);
     min-height: 40px;
     box-sizing: border-box;
     border: 1px solid var(--GreyLight);
     font-size: 14px;
     line-height: var(--xMedium);
+    padding-top: 0.609375rem;
+    padding-bottom: 0.515625rem;
+
+    svg {
+        margin-top: -0.0625rem;
+    }
 
     &:hover,
     &.active,
