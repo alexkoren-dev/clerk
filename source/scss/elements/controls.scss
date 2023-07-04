@@ -29,8 +29,8 @@ input, button, select, textarea {
     border: 1px solid var(--GreyLight);
     font-size: 14px;
     line-height: var(--xMedium);
-    padding-top: 0.609375rem;
-    padding-bottom: 0.515625rem;
+    padding-top: 0.609375rem !important;
+    padding-bottom: 0.515625rem !important;
 
     svg {
         margin-top: -0.0625rem;
