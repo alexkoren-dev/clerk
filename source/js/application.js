@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             For Startups
           </span>
           <span class="icon-new-window">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m14.75 5.083-5.833 5.834-5.833-5.834" stroke="#989EA6"/>
             </svg>         
           </span>
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             For Startups
           </span>
           <span class="icon-new-window">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m14.75 5.083-5.833 5.834-5.833-5.834" stroke="#989EA6"/>
             </svg>         
           </span>
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
     `<div class="are-you-attorney">
       <label>Are you an attorney?</label>
       <a href="https://clerky-staging-attorneys.helpscoutdocs.com/" class="btn">
-        <span>View Help Center for Attorney</span> 
+        <span>View Help Center for Attorneys</span> 
         <span class="icon">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="m12.704 5.63 4.37 4.37-4.37 4.37M2.49 10h14.428" stroke="#6F7680"/>
