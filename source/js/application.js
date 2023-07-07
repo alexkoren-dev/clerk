@@ -119,6 +119,12 @@ document.addEventListener("DOMContentLoaded", function() {
   $('.helpcenter-switch').click(function(event){
     event.stopPropagation();
   });
+
+  if((window.location.protocol + "//" + window.location.host + '/') === window.location.href) {
+    $('#contentArea').addClass('home');
+  } else {
+    $('#contentArea').removeClass('home');
+  }
 });
 
 function addSubscribeSection() {
