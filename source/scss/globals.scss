@@ -19,6 +19,7 @@ body {
 	overflow-x: hidden;
     font-size: 16px;
     line-height: var(--xxMedium);
+	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3,
