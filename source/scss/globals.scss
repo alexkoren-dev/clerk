@@ -62,9 +62,12 @@ blockquote p {
 
 
 #contentArea {
-    max-width: 1200px;
     width: 100%;
     flex: 1;
+    
+    &.home {
+        max-width: 1200px;
+    }
 
 	/* Are you attorney section */
     .are-you-attorney {
