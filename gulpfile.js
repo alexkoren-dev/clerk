@@ -7,19 +7,19 @@ const uglify = require('gulp-uglify-es').default;
 
 const dir = {
   src: './source/',
-  dest: './build/'
+  dest: './assets/'
 };
 
 // styles
 const styles = {
-  src: dir.src + 'scss/styles.scss',
-  dest: dir.dest + 'css/'
+  src: dir.src + 'scss/application.scss',
+  dest: dir.dest + 'stylesheets/'
 };
 
 // custom js settings
 const js = {
 	src: dir.src + 'js/*',
-	dest: dir.dest + 'js/',
+	dest: dir.dest + 'javascripts/',
 };
 
 // Task: Styles
